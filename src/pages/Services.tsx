@@ -3,7 +3,6 @@ import {
   CheckCircle,
   Settings,
   Zap,
-  Layers,
   BookOpen,
   Box,
   ChevronRight,

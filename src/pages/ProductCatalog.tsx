@@ -347,18 +347,18 @@ export default function ProductCatalog() {
   const PRODUCTS_PER_PAGE = 6
 
   // build suppliers list
-  const supplierSet = useMemo(() => {
-    const s = new Set<string>()
-    productsData.forEach((p: Product) => {
-      const sup = p.supplier
-      if (Array.isArray(sup)) {
-        sup.forEach((si) => si && s.add(String(si).trim()))
-      } else if (sup) {
-        s.add(String(sup).trim())
-      }
-    })
-    return s
-  }, [])
+  // const supplierSet = useMemo(() => {
+  //   const s = new Set<string>()
+  //   productsData.forEach((p: Product) => {
+  //     const sup = p.supplier
+  //     if (Array.isArray(sup)) {
+  //       sup.forEach((si) => si && s.add(String(si).trim()))
+  //     } else if (sup) {
+  //       s.add(String(sup).trim())
+  //     }
+  //   })
+  //   return s
+  // }, [])
 
   //...Array.from(supplierSet).filter((x) => x !== "Mindray")],
 
